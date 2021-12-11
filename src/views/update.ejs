@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Update User</title>
+</head>
+<style>
+    .container {
+        padding: 30px;
+        text-align: center;
+    }
+    .container label{
+        display: block;
+        margin-top: 10px;
+    }
+
+    form{
+        width: 60%;
+        margin: 10px auto;
+        border: 1px solid rgb(123, 229, 243);
+        background-color: rgb(243, 242, 242);
+        padding: 15px;
+    }
+    .btn-update{
+      margin-top: 15px;
+      background-color: rgb(43, 177, 50);
+      padding: 5px 15px;
+      border: 1px solid rgb(243, 242, 242);
+      border-radius: 2px;
+    }
+    .btn-update:hover {
+      background-color: rgb(22, 241, 33);
+    }
+</style>
+<body>
+    <div class="container">
+    <form action="/update-user" method="POST">
+        <div><b>Update user:</b></div>
+        <div>
+          <label>First Name: </label>
+          <input type="text" name="firstName" value="<%= dataUser.firstName %>"/>
+        </div>
+        <div>
+          <label>Last Name: </label>
+          <input type="text" name="lastName" value="<%= dataUser.lastName %>"/>
+        </div>
+        <div>
+          <label>Email : </label>
+          <input type="email" name="email" value="<%= dataUser.email %>"/>
+        </div>
+        <div>
+          <label>Address: </label>
+          <input type="text" name="address" value="<%= dataUser.address %>"/>
+        </div>
+        <input type="text" hidden value="<%= dataUser.id %>" name="id">
+        <div>
+          <button type="submit" class="btn-update">Update</button>
+        </div>
+      </form>
+    <div>
+
+</body>
+</html>

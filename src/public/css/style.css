@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+  .container {
+      margin: 0 15px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+  
+tr:hover {background-color: rgb(221, 214, 214);}
+
+.create-user-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.create-user-container label {
+  display: block;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  margin-top: 15px;
+}
+
+
+.create-user-container > form {
+  width: 60%;
+  margin: 10px auto;
+  border: 1px solid rgb(123, 229, 243);
+  background-color: rgb(243, 242, 242);
+  padding: 15px;
+}
+
+.btn-detail {
+  margin-bottom: 15px;
+  background-color: rgb(247, 243, 2);
+  padding: 5px 15px;
+  border: 1px solid rgb(243, 242, 242);
+  border-radius: 2px;
+}
+.btn-detail:hover{
+  background-color: rgb(250, 249, 176);
+}
+
+.btn-edit {
+  background-color: rgb(247, 243, 2);
+  padding: 5px 15px;
+  border: 1px solid rgb(243, 242, 242);
+  border-radius: 2px;
+}
+
+.btn-edit:hover {
+  background-color: rgb(253, 252, 154);
+}
+
+.btn-delete {
+  background-color: rgb(243, 24, 24);
+  padding: 5px 15px;
+  border: 1px solid rgb(243, 242, 242);
+  border-radius: 2px;
+}
+
+.btn-delete:hover{
+  background-color: rgb(253, 144, 144);
+}
